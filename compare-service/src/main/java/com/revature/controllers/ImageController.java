@@ -22,7 +22,7 @@ public class ImageController {
 
     @GetMapping(value = "/diff", produces = MediaType.APPLICATION_JSON_VALUE)
     public String getDifferentFace(){
-        return imageService.compareDifferentFaces("imgA.jpg", "imgC.jpg");
+        return imageService.compareSameFaces("imgA.jpg", "imgC.jpg");
     }
 
 }
